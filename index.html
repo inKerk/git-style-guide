@@ -2,82 +2,80 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Udacity Nanodegree Style Guide</title>
+    <title>Inkerk Git Commit 风格指南</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300|Roboto+Condensed:400,700|Inconsolata">
+    <link rel="stylesheet" href="//fonts.geekzu.org/css?family=Roboto:300|Roboto+Condensed:400,700|Inconsolata">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="http://udacity.github.io/frontend-nanodegree-styleguide/index.html">HTML</a></li>
-            <li><a href="http://udacity.github.io/frontend-nanodegree-styleguide/css.html">CSS</a></li>
-            <li><a href="http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html">JavaScript</a></li>
-            <li><a href="index.html" class="active">Git</a></li>
+            <li><a href="index.html" class="active">Git Commit 风格指南</a></li>
         </ul>
     </nav>
 
 
-    <h1>Udacity Git Commit Message Style Guide</h1>
+    <h1>Inkerk Blockchain Git Commit 风格指南</h1>
 
     <section>
-        <h2>Introduction</h2>
-        <p>This style guide acts as the official guide to follow in your projects. Udacity evaluators will use this guide to grade your projects. There are many opinions on the "ideal" style in the world of development. Therefore, in order to reduce the confusion on what style students should follow during the course of their projects, we urge all students to refer to this style guide for their projects.</p>
+        <h2>介绍</h2>
+        <p>这篇风格指南作为 inKerk Blockchain 项目的官方指南，应用在 inKerk 所有项目中。</p>
     </section>
 
     <section>
         <h2>Commit Messages</h2>
 
         <article>
-            <h3>Message Structure</h3>
-            <p>A commit messages consists of three distinct parts separated by a blank line: the title, an optional body and an optional footer. The layout looks like this:</p>
+            <h3>消息结构</h3>
+            <p>一条 Commit message 应该包含使用空行隔开的如下三个部分:标题栏、可选的内容和可选的底部，总体看起来应该像这样:</p>
 
-            <pre><code>type: subject
+            <pre><code>类型: 主题
 
-body
+内容
 
-footer</code></pre>
+底部</code></pre>
 
-            <p>The title consists of the type of the message and subject.</p>
+            <p>标题部分包含了消息的类型和主题</p>
         </article>
 
         <article>
-            <h3>The Type</h3>
-            <p>The type is contained within the title and can be one of these types:</p>
+            <h3>类型</h3>
+            <p>标题部分的类型应该使用下述单词进行描述:</p>
 
             <ul>
-                <li><strong>feat:</strong> a new feature</li>
-                <li><strong>fix:</strong> a bug fix</li>
-                <li><strong>docs:</strong> changes to documentation</li>
-                <li><strong>style:</strong> formatting, missing semi colons, etc; no code change</li>
-                <li><strong>refactor:</strong> refactoring production code</li>
-                <li><strong>test:</strong> adding tests, refactoring test; no production code change</li>
-                <li><strong>chore:</strong> updating build tasks, package manager configs, etc; no production code change</li>
+                <li><strong>feat:</strong> 一个新的 feature</li>
+                <li><strong>fix:</strong> 一个 Bug fix</li>
+                <li><strong>docs:</strong> 文档层面的更改</li>
+                <li><strong>style:</strong> 代码格式的调整，比如缺失的符号之类的，不存在代码逻辑上的变更</li>
+                <li><strong>typo:</strong> 错误输入的文案的变更</li>
+                <li><strong>refactor:</strong> 重构生产环境代码</li>
+                <li><strong>test:</strong> 添加测试、重构测试，无应用代码修改。</li>
+                <li><strong>chore:</strong> 调整包管理器、CI 等配置内容，无应用代码修改。</li>
             </ul>
         </article>
 
         <article>
-            <h3>The Subject</h3>
-            <p>Subjects should be no greater than 50 characters, should begin with a capital letter and do not end with a period.</p>
+            <h3>主题</h3>
+            <p> Commit 主题应该不超过 50 个字符，且应开始于大写字母。结尾无限标注句号。</p>
 
-            <p>Use an imperative tone to describe what a commit does, rather than what it did. For example, use <strong>change</strong>; not changed or changes.</p>
+            <p>使用祈使句的形式来描述一个 Commit 的动作。 比如, 使用 <strong>change</strong>; 而不是 changed 或 changes.</p>
         </article>
 
         <article>
-            <h3>The Body</h3>
-            <p>Not all commits are complex enough to warrant a body, therefore it is optional and only used when a commit requires a bit of explanation and context. Use the body to explain the <strong>what</strong> and <strong>why</strong> of a commit, not the how.</p>
+            <h3>主体</h3>
+            <p>由于 Commit 的复杂程度不同，因此不要求每个 Commit 都写内容。主体内需要说明 <strong>What (是什么）</strong> 和 <strong>Why (为什么)</strong>，以确保阅读你的 Commit 的人能够明了前因后果。</p>
 
-            <p>When writing a body, the blank line between the title and the body is required and you should limit the length of each line to no more than 72 characters.</p>
+            <p>编写正文时，需要注意标题和正文之间的空行，并限制每一行的长度不超过 72 个字符。</p>
         </article>
 
         <article>
-            <h3>The Footer</h3>
-            <p>The footer is optional and is used to reference issue tracker IDs.</p>
+            <h3>底部信息</h3>
+            <p>底部信息用于记录 ISSUE 跟踪器或其他相关软件的连接。</p>
         </article>
 
         <article>
-            <h3>Example Commit Message</h3>
+            <h3>示例</h3>
             <pre><code>feat: Summarize changes in around 50 characters or less
 
 More detailed explanatory text, if necessary. Wrap it to about 72
